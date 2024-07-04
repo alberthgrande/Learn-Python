@@ -1,0 +1,5 @@
+# pycharm resource
+/.idea
+
+# python module
+/.venv
