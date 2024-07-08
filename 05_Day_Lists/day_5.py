@@ -57,5 +57,112 @@ print("\n")
 
 # Slicing items
 fruits = ["banana", "orange", "mango", "lemon"]
-all_fruits = fruits[0:4]
+all_fruits = fruits[0:4]  # 0 is the starts and 4 is the ends
 print(all_fruits)
+# this is also give the same result as the above
+all_fruits = fruits[0:]  # if we don't set where to stop it takes all the rest
+print(all_fruits)
+orange_and_mango = fruits[1:3]  # it does not include the end index
+orange_mango_lemon = fruits[-3:]
+print(orange_and_mango)
+print(orange_mango_lemon)
+print("\n")
+
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits[0] = "avocado"
+print(fruits)
+fruits[1] = "apple"
+print(fruits)
+fruits = ["banana", "orange", "mango", "lemon"]
+last_index = fruits[-4:]  # it returns all the fruits
+# this is also give the same result as the above
+orange_and_mango = fruits[-3:-1]  # it does not include the end index
+orange_mango_lemon = fruits[-3:]
+print(orange_and_mango)
+print(orange_mango_lemon)
+
+print("\n")
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits[0] = "avocado"
+fruits[1] = "apple"
+last_index = len(fruits) - 1  # get the last index
+fruits[last_index] = "lime"  # change the value of the last index
+print(fruits)
+print("\n")
+
+# checking items
+fruits = ["banana", "orange", "mango", "lemon"]
+does_exist = "banana" in fruits
+print(does_exist)
+does_exist = "lime" in fruits
+print(does_exist)
+print("\n")
+
+# Append
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits.append("apple")  # append() builtin method add at the end of array list
+print(fruits)
+fruits.append("lime")
+print(fruits)
+print("\n")
+
+# insert
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits.insert(0, "strawberry")  # 0 is the position and strawberry is the value
+print(fruits)
+fruits.insert(1, "peach")
+print(fruits)
+print("\n")
+
+# remove
+fruits.remove("banana")
+print(fruits)
+fruits.remove("lemon")
+print(fruits)
+print("\n")
+
+# pop
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits.pop()  # pop() remove the item on the end of the array list
+print(fruits)
+fruits.pop(
+    0
+)  # by adding a value on the pop method you can removed the value on the array list on its position
+print(fruits)
+print("\n")
+
+
+# del
+fruits = ["banana", "orange", "mango", "lemon"]
+del fruits[0]
+print(fruits)
+
+# del fruits
+# print(fruits)  # This should give: NameError: name 'fruits' is not defined
+
+print("\n")
+
+# clear
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits.clear()
+print(fruits)  # []
+
+
+# copying a lits
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits_copy = fruits.copy()
+print(fruits_copy)
+print("\n")
+
+# join
+positive_numbers = [1, 2, 3, 4, 5]
+zero = [0]
+negative_numbers = [-5, -4, -3, -2, -1]
+integers = negative_numbers + zero + positive_numbers
+print(integers)
+print("\n")
+
+fruits = ["banana", "orange", "mango", "lemon"]
+vegetables = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"]
+fruits_and_vegetables = fruits + vegetables
+print(fruits_and_vegetables)
