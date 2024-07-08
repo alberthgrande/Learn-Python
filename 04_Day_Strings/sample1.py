@@ -95,3 +95,93 @@ sentence = "You cannot end a sentence with because because because is a conjunct
 first_occurrence = sentence.find("because")
 print(first_occurrence)
 print("\n")
+
+# Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+
+remove_sentence = "because because because"
+replace_sentence = sentence.replace(remove_sentence, "")
+print(replace_sentence)
+print("\n")
+
+# Does 'Coding For All' start with a substring Coding?
+coding_for_all = "Coding For All"
+
+if coding_for_all.startswith("Coding"):
+    print(f"The string starts with Coding")
+else:
+    print(f"The string is not starting with Coding")
+print("\n")
+
+# Does 'Coding For All' end with a substring coding?
+if coding_for_all.startswith("coding"):
+    print(f"The string starts with Coding")
+else:
+    print(f"The string is not starting with Coding")
+print("\n")
+
+# '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+trailing_phrase = "   Coding For All      "
+return_trailing_phrase = " ".join(trailing_phrase.split())
+print(return_trailing_phrase)
+print("\n")
+
+"""
+Which one of the following variables return True when we use the method isidentifier():
+30DaysOfPython
+thirty_days_of_python
+"""
+
+var1 = "30DaysOfPython"
+var2 = "thirty_days_of_python"
+
+print(var1.isidentifier())
+print(var2.isidentifier())
+print("\n")
+
+"""
+The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+"""
+python_libraries = ["Django", "Flask", "Bottle", "Pyramid", "Falcon"]
+join_list = "# ".join(python_libraries)
+print(join_list)
+print("\n")
+
+sentence = "I am enjoying this challenge.\nI just wonder what is next."
+print(sentence)
+print("\n")
+
+header_list = "Name\tAge\tCountry\t\tCity"
+info_list = "Alberth\t25\tPhilippines\tSariaya"
+
+full_data = header_list + "\n" + info_list
+
+print(full_data)
+
+print("\n")
+
+radius = 30
+area = 3.14 * radius**2
+
+str_formatting = "The area of a circle with radius {} is {} meters square.".format(
+    radius, area
+)
+
+print(str_formatting)
+print("\n")
+
+num1 = 8
+num2 = 6
+add = num1 + num2
+minus = num1 - num2
+multiply = num1 * num2
+divide = num1 / num2
+modulus = num1 % num2
+floor_divide = num1 // num2
+exponentiation = num2**num2
+print("{} + {} = {}".format(num1, num2, add))
+print("{} - {} = {}".format(num1, num2, minus))
+print("{} * {} = {}".format(num1, num2, multiply))
+print("{} / {} = {}".format(num1, num2, divide))
+print("{} % {} = {}".format(num1, num2, modulus))
+print("{} // {} = {}".format(num1, num2, floor_divide))
+print("{} ** {} = {}".format(num1, num2, exponentiation))
