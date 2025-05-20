@@ -1,8 +1,8 @@
 import random
 import time
 
-def guess_time(start_time):
 
+def guess_time(start_time):
     run_time = time.time() - start_time
     hours, remainder = divmod(run_time, 3600)
     minutes, seconds = divmod(remainder, 60)
