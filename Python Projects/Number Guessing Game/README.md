@@ -30,4 +30,5 @@ To make the game more interesting, you can add the following features:
 
 - Keep track of the user’s high score (i.e., the fewest number of attempts it took to guess the number under a specific difficulty level).
 
-[Resource Project](https://roadmap.sh/projects/number-guessing-game)
+Link: [Number Guessing Game](https://roadmap.sh/projects/number-guessing-game)
+Link: [Solution](https://github.com/alberthgrande/Learn-Python/tree/master/Python%20Projects/Number%20Guessing%20Game)
